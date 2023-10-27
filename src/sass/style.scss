@@ -47,6 +47,38 @@ section {
 	}
 }
 
+.my-card {
+	transition: transform 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(0.95);
+	}
+}
+
+// ---------------------------------
+// Flip animation Icon
+
+.flip-icon {
+	.bi-phone-flip {
+		font-size: 3rem;
+	}
+}
+
+.rotate-center {
+	animation: rotate-center 2s ease-in-out 3 both;
+}
+
+ @keyframes rotate-center {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+  // ---------------------------------
+
 //HERO-IMAGE
 .hero-image {
 	position: relative;
